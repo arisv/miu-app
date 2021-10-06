@@ -25,6 +25,7 @@ typings/
 
 # Visual Studio Code
 .vscode/
+keytool/
 
 *.tgz
 webpack.config.js

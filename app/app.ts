@@ -33,7 +33,7 @@ if (androidApp) {
                         console.log("Provider Installed!");
                     },
                     onProviderInstallFailed: (errorCode, intent) => {
-                        console.log("Error installing: " + errorCode);
+                        console.log("Error installing tsl provider for android 19: " + errorCode);
                     }
                 }
             )

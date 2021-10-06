@@ -44,7 +44,6 @@
         console.log(fileToUpload);
         try {
           showModal({ page: UploadWidget, props: {uploadObject: fileToUpload} });
-          //uploadFile(fileToUpload);
         } catch (e) {
           console.log("Error while uploading file");
           console.log(e);
@@ -83,7 +82,7 @@
                   const fileToUpload = ""+resolved;
                   console.log("Sending file to upload:" + fileToUpload);
                   setTimeout(function(fileToUpload) {
-                    showModal({ page: UploadWidget, props: {uploadObject: fileToUpload} });
+                    showModal({ page: UploadWidget, props: {uploadObject: fileToUpload, returnOnSuccess: true} });
                   }, 1000, fileToUpload);
                 }
               }
